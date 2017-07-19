@@ -1,0 +1,18 @@
+Torry Brelsford 
+PA2
+10/3/2015
+
+/////expox.c 
+(1) uses fork()   to launch another process
+(2) uses exec() command to replace the program driving this process, while also supplying 
+the arguments that this new program (expoxch.c) needs to complete its execution.
+(3) uses wait() command to wait for the completion of the execution of the child process.
+
+expox.c will take two command line arguments and pass them on to the expoxch.c. 
+The command line arguments for expox.c are x (a number less than 1) and n (number of terms to be added, 
+1 or more).
+
+/////expoxch.c
+
+two arguments to obtain an approximation of  e^x by adding the first n terms, and prints the result using the format
+>  Child(PID =xxx): For x =0.5 the first 5 terms yield 1.6484375
